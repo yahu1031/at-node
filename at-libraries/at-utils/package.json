@@ -1,0 +1,49 @@
+{
+  "name": "@sign/at-utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "docs": "npx typedoc --watch src/",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "The",
+    "@platform",
+    "the-at-platform"
+  ],
+  "author": "minnu1031",
+  "license": "BSD 3-Clause License",
+  "module": "dist/at-utils.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/at-utils.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/at-utils.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "@types/text-encoding": "^0.0.36",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "text-encoding": "^0.7.0",
+    "winston": "^3.7.2",
+    "yaml": "^2.1.0"
+  }
+}

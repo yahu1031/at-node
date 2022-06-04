@@ -1,0 +1,45 @@
+{
+  "name": "@sign/at-server-spec",
+  "version": "0.0.1",
+  "description": "A Typescript library containing abstract classes that defines what implementations of the root and secondary servers are responsible for (Used only for internal libraries).",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "docs": "npx typedoc --watch src/",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "The",
+    "@platform",
+    "the-at-platform"
+  ],
+  "author": "minnu1031",
+  "license": "BSD 3-Clause License",
+  "module": "dist/at-server-spec.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/at-server-spec.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/at-server-spec.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "@sign/at-commons": "file:../../at-libraries/at-commons"
+  }
+}

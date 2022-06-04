@@ -1,0 +1,44 @@
+{
+  "name": "@sign/at-client",
+  "version": "0.0.1",
+  "description": "The at-client library is the non-platform specific Client SDK which provides the essential methods for building an app using the @protocol.",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "docs": "npx typedoc --watch src/",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "The",
+    "@platform",
+    "the-at-platform"
+  ],
+  "author": "minnu1031",
+  "license": "BSD 3-Clause License",
+  "module": "dist/at-client.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/at-client.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/at-client.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "@sign/at-commons": "file:../at-libraries/at-commons"
+  }
+}

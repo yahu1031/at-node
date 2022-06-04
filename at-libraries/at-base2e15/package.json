@@ -1,0 +1,41 @@
+{
+  "name": "@sign/at-base2e15",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "docs": "npx typedoc --watch src/",
+    "start": "node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "The",
+    "@platform",
+    "the-at-platform"
+  ],
+  "author": "minnu1031",
+  "license": "BSD 3-Clause License",
+  "module": "dist/at-base2e15.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/at-base2e15.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/at-base2e15.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "typescript": "^3.9.10"
+  }
+}
