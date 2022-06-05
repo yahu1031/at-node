@@ -2,7 +2,7 @@
 
 ---
 
-<p align="center">A library of TypeScript utility classes that are used across other components of the @‎platform.</p>
+<p align="center">A TypeScript library that contains the core commands that can be used with a secondary server (scan, update, lookup, llookup, plookup, etc.)</p>
 
 > <p align="center">This is a translated code of <a href="https://pub.dev/packages/at_lookup">Dart at-lookup</a> library.</p>
 

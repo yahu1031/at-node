@@ -2,7 +2,7 @@
 
 ---
 
-<p align="center">A library of TypeScript utility classes that are used across other components of the @‎platform.</p>
+<p align="center">Binary-to-text encoding schemes that represent binary data in an unicode string format, each unicode character represent 15 bits of binary data.</p>
 
 > <p align="center">This is a translated code of <a href="https://pub.dev/packages/at_base2e15">Dart at_base2e15</a> library.</p>
 

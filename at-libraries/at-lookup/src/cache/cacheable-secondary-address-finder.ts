@@ -1,6 +1,7 @@
 import { AtError, SecondaryNotFoundError } from "@sign/at-commons";
 import { AtLogger } from "@sign/at-utils";
 import { LookUpUtil } from "../utils/lookup.util";
+import './../utils/ext.util';
 import { SecondaryAddressCacheEntry } from "./secondary-address-cache-entry";
 import { SecondaryAddress, SecondaryAddressFinder, SecondaryUrlFinder } from "./secondary-finder";
 
@@ -36,7 +37,7 @@ export class CacheableSecondaryAddressFinder implements SecondaryAddressFinder {
         if (this._map.has(atSign)) {
             return this._map.get(atSign)!.secondaryAddress.toString();
         } else {
-            throw new AtError(`Unable to find secondary address for atSign:${atSign}`);
+            throw new AtError(`Unable to find secondary address for atSign: ${atSign}`);
         }
     }
 

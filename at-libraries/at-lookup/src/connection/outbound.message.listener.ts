@@ -1,6 +1,5 @@
-import { AtTimeoutError, BufferOverFlowError, ByteBuffer } from "@sign/at-commons";
+import { AtTimeoutError, BufferOverFlowError, ByteBuffer, TextDecoder } from "@sign/at-commons";
 import { AtLogger } from '@sign/at-utils';
-import { TextDecoder } from "text-encoding";
 import { AtLookUpError } from "../utils/error";
 import { Queue } from "../utils/queue.util";
 import { OutboundConnection } from "./outbound.connection";

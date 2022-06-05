@@ -1,0 +1,22 @@
+{
+  "name": "secondary-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc --watch src/index.ts",
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Minnu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.36",
+    "typescript": "^3.9.10"
+  },
+  "dependencies": {
+    "@sign/at-lookup": "file:../../at-libraries/at-lookup",
+    "@sign/at-server-status": "file:../../at-libraries/at-server-status"
+  }
+}

@@ -1,7 +1,7 @@
-import { AtConnectionError, AtTimeoutError } from "@sign/at-commons";
+import { AtConnectionError, AtTimeoutError, TextDecoder } from "@sign/at-commons";
 import { AtLogger } from "@sign/at-utils";
 import { Socket } from "node:net";
-import { TextDecoder } from "text-encoding";
+import './../utils/ext.util';
 
 export abstract class SecondaryAddressFinder {
     abstract findSecondaryAddress(atSign: string): Promise<string>;
@@ -37,7 +37,7 @@ export class SecondaryUrlFinder {
         var response: string | null;
         var socket: Socket = new Socket();
         try {
-            this._logger.finer('AtLookup.findSecondary received atsign: $atsign');
+            this._logger.finer(`AtLookup.findSecondary received atsign: ${atsign}`);
             if (atsign.startsWith('@')) atsign = atsign.replaceFirst('@', '');
             var answer = '';
             var secondary: string | null;

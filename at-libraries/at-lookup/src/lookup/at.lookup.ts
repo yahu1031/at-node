@@ -9,6 +9,7 @@ import { AtLookUpError } from '../utils/error';
 import { signChallenge, toPublicPem } from '../utils/helper.utils';
 import { LookUpUtil } from '../utils/lookup.util';
 import { Mutex } from '../utils/mutex';
+import '../utils/ext.util';
 
 abstract class AAtLookup {
 
@@ -70,7 +71,7 @@ export class AtLookup implements AAtLookup {
     }
 
     public isConnectionAvailable(): boolean {
-        return this._connection != null && !this._connection!.isInValid();
+        return this._connection != null && !this.isInValid();
     }
 
     public _isAuthRequired(): boolean {
@@ -164,7 +165,7 @@ export class AtLookup implements AAtLookup {
     }
 
     public async findSecondary(atSign: string, rootDomain?: string, port?: number): Promise<string> {
-        return await new CacheableSecondaryAddressFinder(rootDomain!, port!).findSecondaryAddress(atSign);
+        return await new CacheableSecondaryAddressFinder(rootDomain ?? this._rootDomain!, port ?? this._rootPort!).findSecondaryAddress(atSign);
     }
 
     public async createConnection(): Promise<void> {
@@ -475,4 +476,11 @@ export class AtLookup implements AAtLookup {
         return await this._process(atCommand, true);
     }
 
+    public isInValid(): boolean {
+        return this._connection!.isInValid();
+    }
+
+    public async close(): Promise<void> {
+        await this._connection!.close();
+     }
 }
