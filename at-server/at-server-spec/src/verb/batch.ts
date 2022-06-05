@@ -1,4 +1,4 @@
-
+import { Verb } from "./verb";
 import { VerbSyntax } from "@sign/at-commons";
 import {Pkam} from './pkam'
 /** 

@@ -1,4 +1,5 @@
 import { VerbSyntax } from "@sign/at-commons";
+import { Verb } from "./verb";
 
 /** 
  * The "info" verb returns a JSON object as follows:
@@ -31,7 +32,7 @@ import { VerbSyntax } from "@sign/at-commons";
  *
  * This verb _does not_ require authentication.
  *
- * **Syntax**: info
+ * **Syntax**: `info`
  */
 export class Info extends Verb {
     name(): string {

@@ -1,4 +1,5 @@
 import { VerbSyntax } from "@sign/at-commons";
+import { Verb } from "./verb";
 
 /** 
  * Delete verb deletes a key from @sign's secondary server.

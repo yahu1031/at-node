@@ -1,5 +1,6 @@
 import { VerbSyntax } from "@sign/at-commons";
 import { From } from './from';
+import { Verb } from "./verb";
 
 /** 
  * The cram verb is used to authenticate the @sign to the secondary server. On successful request, binds the @sign to the secondary server. The secret is appended to the challenge (response of from verb) and gives a SHA512 digest which serves as an input to the CRAM verb.

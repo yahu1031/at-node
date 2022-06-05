@@ -1,4 +1,5 @@
 import { VerbSyntax } from "@sign/at-commons";
+import { Verb } from "./verb";
 
 /** 
  * The “from” verb is used to tell the secondary server what @sign you claim to be, and the secondary server will respond with a challenge.

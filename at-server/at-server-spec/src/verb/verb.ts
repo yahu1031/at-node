@@ -1,7 +1,7 @@
 /**
  * Represents a Verb in the @sign protocol.
  */
-abstract class Verb {
+export abstract class Verb {
     /** 
      * Returns name of the verb
      */

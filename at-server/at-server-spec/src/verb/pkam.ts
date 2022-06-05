@@ -1,5 +1,6 @@
 import { VerbSyntax } from "@sign/at-commons";
 import { From } from './from';
+import { Verb } from "./verb";
 
 /** 
  * The pkam( Public Key Authentication Mechanism) verb is used to authenticate the @sign to the secondary server. This is similar to how ssh authentication works. On successful request, binds the @sign to the secondary server.

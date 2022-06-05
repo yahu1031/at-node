@@ -1,4 +1,5 @@
 import { VerbSyntax } from "@sign/at-commons";
+import { Verb } from "./verb";
 
 /** 
  * The `config` verb is used for configuring or viewing an @sign’s block/allow list.
