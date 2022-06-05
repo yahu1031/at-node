@@ -40,8 +40,8 @@
     "typescript": "^3.9.10"
   },
   "dependencies": {
-    "@sign/at-commons": "file:../../at-commons",
-    "@sign/at-utils": "file:../../at-utils",
-    "@sign/at-lookup": "file:../at-lookup"
+    "@sign/at-commons": "file:../at-commons",
+    "@sign/at-lookup": "file:../at-lookup",
+    "@sign/at-utils": "file:../at-utils"
   }
 }
